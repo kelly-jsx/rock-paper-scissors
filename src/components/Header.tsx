@@ -3,7 +3,7 @@ import React from 'react'
 import Logo from '../public/logo.svg'
 
 export const Header = ({ score }: { score: number }) => (
-  <div className="flex items-center justify-between rounded-md border-2 border-headerOutline p-3.5 pl-6 desktop:w-2/3 desktop:rounded-lg desktop:py-5 desktop:pr-6 desktop:pl-8">
+  <div className="flex w-full items-center justify-between rounded-md border-2 border-headerOutline p-3.5 pl-6 desktop:w-2/3 desktop:rounded-lg desktop:py-5 desktop:pr-6 desktop:pl-8">
     <img
       src={Logo}
       alt="Rock Paper Scissors Logo"
