@@ -9,7 +9,7 @@ function App() {
       <div className="flex w-full justify-center">
         <Header score={12} />
       </div>
-      <div className="flex w-full justify-center">
+      <div className="flex h-full w-full items-center justify-center">
         <Actions />
       </div>
     </div>

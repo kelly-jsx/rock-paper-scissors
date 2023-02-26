@@ -2,21 +2,29 @@ import { ActionButton } from './ActionButton'
 import Paper from '../../public/icon-paper.svg'
 import Scissors from '../../public/icon-scissors.svg'
 import Rock from '../../public/icon-rock.svg'
+import ActionsBg from '../../public/bg-triangle.svg'
 
 export const Actions = () => (
-  <div className="grid grid-cols-2 justify-items-center">
-    <div className="paper grid h-48 w-48 cursor-pointer items-center justify-center rounded-full">
+  <div
+    className="actions grid grid-cols-2 justify-items-center gap-20"
+    style={{
+      backgroundImage: `url(${ActionsBg})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center'
+    }}
+  >
+    <div className="paper grid h-36 w-36 cursor-pointer items-center justify-center rounded-full bg-gradient-to-b from-paper-primary to-paper-secondary lg:h-48 lg:w-48">
       <ActionButton>
         <img src={Paper} alt="" />
       </ActionButton>
     </div>
-    <div className="scissors grid h-48 w-48 cursor-pointer items-center justify-center rounded-full">
+    <div className="scissors grid h-36 w-36 cursor-pointer items-center justify-center rounded-full bg-gradient-to-b from-scissors-primary to-scissors-secondary lg:h-48 lg:w-48">
       <ActionButton>
         <img src={Scissors} alt="" />
       </ActionButton>
     </div>
-    <div className="col-span-2">
-      <div className="rock grid h-48 w-48 cursor-pointer items-center justify-center rounded-full">
+    <div className="rock col-span-2 rounded-full">
+      <div className="grid h-36 w-36 cursor-pointer items-center justify-center rounded-full bg-gradient-to-b from-rock-primary to-rock-secondary lg:h-48 lg:w-48">
         <ActionButton>
           <img src={Rock} alt="" />
         </ActionButton>
