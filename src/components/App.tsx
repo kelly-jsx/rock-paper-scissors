@@ -10,7 +10,10 @@ function App() {
   const [showRulesModal, setShowRulesModal] = useState(false)
 
   const [choice, setChoice] = useState('')
-  const [score, setScore] = useState(0)
+  // const [score, setScore] = useState(0)
+  const [score, setScore] = useState(
+    JSON.parse(localStorage.getItem('score')) || 0
+  )
 
   const [showResults, setShowResults] = useState(false)
 
@@ -22,6 +25,7 @@ function App() {
 
   const handleChangeScore = (updatedScore: number) => {
     setScore(updatedScore)
+    localStorage.setItem('score', JSON.stringify(updatedScore))
   }
 
   return (
