@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH/hub)
-- Live Site URL: [Add live site URL here](https://glowing-meringue-074ec1.netlify.app/)
+- Solution URL: [Link](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH/hub)
+- Live Site URL: [DEMO](https://glowing-meringue-074ec1.netlify.app/)
 
 ### Built with
 
