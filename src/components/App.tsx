@@ -12,7 +12,7 @@ function App() {
   const [choice, setChoice] = useState('')
   // const [score, setScore] = useState(0)
   const [score, setScore] = useState(
-    JSON.parse(localStorage.getItem('score')) || 0
+    JSON.parse(localStorage.getItem('score') || '0')
   )
 
   const [showResults, setShowResults] = useState(false)
